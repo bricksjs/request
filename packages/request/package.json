@@ -1,0 +1,43 @@
+{
+  "name": "@bricks/request",
+  "version": "1.0.0",
+  "description": "一个封装的前端请求库",
+  "author": "贾亦品",
+  "homepage": "https://github.com/dahuzix/bricks#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://nexus3.hundsun.com:6060/repository/rd_center/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dahuzix/bricks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/dahuzix/bricks/issues"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "name-styles": "^2.0.2",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.3",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0"
+  }
+}
