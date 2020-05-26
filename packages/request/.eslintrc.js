@@ -24,6 +24,7 @@ module.exports = {
     "rules": {
       "import/extensions":["off","never"],
       "import/no-unresolved":"off",
-      "prefer-const": "off"
+      "prefer-const": "off",
+      "no-case-declarations": "off",
     }
 };

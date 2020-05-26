@@ -5,7 +5,7 @@
   "author": "贾亦品",
   "homepage": "https://github.com/dahuzix/bricks#readme",
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
@@ -20,24 +20,36 @@
     "url": "git+https://github.com/dahuzix/bricks.git"
   },
   "scripts": {
+    "build:prod": "cross-env mode=production node ./build/webpack.run.js",
+    "build:dev": "cross-env mode=development node ./build/webpack.run.js",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/dahuzix/bricks/issues"
   },
   "dependencies": {
+    "@babel/runtime": "^7.9.6",
+    "@babel/runtime-corejs3": "^7.9.6",
     "axios": "^0.19.2",
     "name-styles": "^2.0.2",
     "qs": "^6.9.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
     "@types/qs": "^6.9.3",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "typescript": "^3.9.3",
-    "webpack": "^4.43.0"
+    "webpack": "^4.43.0",
+    "webpack-merge": "^4.2.2"
   }
 }
