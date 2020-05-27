@@ -4,7 +4,7 @@ const config = {
       "@babel/preset-env",
       {
         // "modules": false,
-        // "modules": 'commonjs',
+        "modules": 'commonjs',
       }
     ],
     [

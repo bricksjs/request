@@ -5,7 +5,7 @@
   "author": "贾亦品",
   "homepage": "https://github.com/dahuzix/bricks#readme",
   "license": "ISC",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
@@ -22,6 +22,8 @@
   "scripts": {
     "build:prod": "cross-env mode=production node ./build/webpack.run.js",
     "build:dev": "cross-env mode=development node ./build/webpack.run.js",
+    "babel:build": "babel ./src --out-dir=lib --keep-file-extension=.ts",
+    "watch:ts": "tsc --watch",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
@@ -35,8 +37,8 @@
     "qs": "^6.9.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
+    "@babel/cli": "^7.10.0",
+    "@babel/core": "^7.10.0",
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-typescript": "^7.9.0",
