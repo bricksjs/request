@@ -1,7 +1,21 @@
-import _JSON$stringify from "@babel/runtime-corejs3/core-js/json/stringify";
-import qs from 'qs';
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime-corejs3/helpers/interopRequireDefault");
+
+var _Object$defineProperty = require("@babel/runtime-corejs3/core-js/object/define-property");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.configForm = exports.configJson = void 0;
+
+var _stringify = _interopRequireDefault(require("@babel/runtime-corejs3/core-js/json/stringify"));
+
+var _qs = _interopRequireDefault(require("qs"));
+
 // 默认请求配置 json 请求格式
-export var configJson = {
+var configJson = {
   // 请求的接口，在请求的时候，如axios.get(url,config);这里的url会覆盖掉config中的url
   url: '',
   // 请求的接口
@@ -13,7 +27,7 @@ export var configJson = {
     // 为了避免qs格式化时对内层对象的格式化先把内层的对象转为
     // data.strSQL = base64encode(data.strSQL)
     // 由于使用的json-data传数据所以要格式化
-    return _JSON$stringify(data);
+    return (0, _stringify.default)(data);
   }],
   // 提前处理返回的数据=
   transformResponse: [function t(data) {
@@ -29,7 +43,7 @@ export var configJson = {
   params: {},
   // 序列化param
   paramsSerializer: function paramsSerializer(params) {
-    return qs.stringify(params);
+    return _qs.default.stringify(params);
   },
   // 默认post参数，使用axios.post(url,{},config);如果没有额外的也必须要用一个空对象，否则会报错
   data: {},
@@ -58,7 +72,8 @@ export var configJson = {
   maxRedirects: 5
 }; // 导出form 请求
 
-export var configForm = {
+exports.configJson = configJson;
+var configForm = {
   // 请求的接口，在请求的时候，如axios.get(url,config);这里的url会覆盖掉config中的url
   url: '',
   // 请求的接口
@@ -68,7 +83,7 @@ export var configForm = {
     // 为了避免qs格式化时对内层对象的格式化先把内层的对象转为
     // data.strSQL = base64encode(data.strSQL)
     // 由于使用的form-data传数据所以要格式化
-    return qs.stringify(data);
+    return _qs.default.stringify(data);
   }],
   // 提前处理返回的数据=
   transformResponse: [function t(data) {
@@ -84,7 +99,7 @@ export var configForm = {
   params: {},
   // 序列化param
   paramsSerializer: function paramsSerializer(params) {
-    return qs.stringify(params);
+    return _qs.default.stringify(params);
   },
   // 默认post参数，使用axios.post(url,{},config);如果没有额外的也必须要用一个空对象，否则会报错
   data: {},
@@ -112,3 +127,4 @@ export var configForm = {
   // 如果设置为0，将不会 follow 任何重定向
   maxRedirects: 5
 };
+exports.configForm = configForm;
