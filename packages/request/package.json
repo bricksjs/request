@@ -20,9 +20,8 @@
     "url": "git+https://github.com/dahuzix/bricks.git"
   },
   "scripts": {
-    "build:prod": "cross-env mode=production node ./build/webpack.run.js",
-    "build:dev": "cross-env mode=development node ./build/webpack.run.js",
-    "babel:build": "babel ./src --out-dir=lib --keep-file-extension=.ts",
+    "build:babel": "babel ./src --out-dir=lib --extensions=.ts",
+    "build:tsc": "tsc",
     "watch:ts": "tsc --watch",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
@@ -45,13 +44,9 @@
     "@types/qs": "^6.9.3",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
-    "babel-loader": "^8.1.0",
-    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
-    "typescript": "^3.9.3",
-    "webpack": "^4.43.0",
-    "webpack-merge": "^4.2.2"
+    "typescript": "^3.9.3"
   }
 }

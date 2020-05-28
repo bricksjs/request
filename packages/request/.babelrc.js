@@ -3,8 +3,8 @@ const config = {
     [
       "@babel/preset-env",
       {
-        // "modules": false,
-        "modules": 'commonjs',
+        "modules": false,
+        // "modules": 'commonjs',
       }
     ],
     [
@@ -18,8 +18,7 @@ const config = {
         "corejs": {
           "version": 3,
           "proposals": true
-        },
-        // "useESModules": false
+        }
       }
     ]
   ]
