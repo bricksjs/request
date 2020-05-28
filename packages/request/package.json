@@ -1,6 +1,6 @@
 {
   "name": "@bricks/request",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个封装的前端请求库",
   "author": "贾亦品",
   "homepage": "https://github.com/dahuzix/bricks#readme",
