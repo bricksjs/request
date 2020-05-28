@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "一个封装的前端请求库",
   "author": "贾亦品",
-  "homepage": "https://github.com/dahuzix/bricks#readme",
+  "homepage": "https://github.com/bricksjs/request#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -13,11 +13,11 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://nexus3.hundsun.com:6060/repository/rd_center/"
+    "registry": "https://registry.npm.taobao.org/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dahuzix/bricks.git"
+    "url": "git+https://github.com/bricksjs/request.git"
   },
   "scripts": {
     "build:babel": "babel ./src --out-dir=lib --extensions=.ts",
@@ -26,7 +26,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/dahuzix/bricks/issues"
+    "url": "https://github.com/bricksjs/request/issues"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
