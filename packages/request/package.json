@@ -33,7 +33,7 @@
     "@babel/runtime-corejs3": "^7.9.6",
     "axios": "^0.19.2",
     "name-styles": "^2.0.2",
-    "qs": "^6.9.4"
+    "qs": "^6.9.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.0",
